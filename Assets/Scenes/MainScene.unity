@@ -359,6 +359,72 @@ MonoBehaviour:
   onInputTaken:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &464387848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 867303076}
+    m_Modifications:
+    - target: {fileID: 118947772172935014, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_Name
+      value: Sticman_Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12208414
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.0570002
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.38985276
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.017621169
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9998448
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.981
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118947772180229346, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c9009f413d36b444fae24efe3107c7b1, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+--- !u!4 &464387849 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 118947772173288262, guid: f4b77c3e5f70c904a8b22481e364dfe2, type: 3}
+  m_PrefabInstance: {fileID: 464387848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466522676
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,8 +661,8 @@ MonoBehaviour:
   manager: {fileID: 1805587070}
   Rigidbody: {fileID: 593669918}
   Collider: {fileID: 593669917}
---- !u!135 &593669917
-SphereCollider:
+--- !u!65 &593669917
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -606,8 +672,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.7920133, z: 0.99558693}
+  m_Center: {x: 0, y: -0.11920148, z: -0.35577032}
 --- !u!54 &593669918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -781,7 +847,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 464387849}
   m_Father: {fileID: 1805587066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -957,10 +1024,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.57354915
+  m_Height: 2.5583758
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.13136339, y: 0.12336016, z: -0.38233507}
 --- !u!54 &1805587068
 Rigidbody:
   m_ObjectHideFlags: 0
