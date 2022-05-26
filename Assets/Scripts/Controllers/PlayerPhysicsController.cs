@@ -9,8 +9,8 @@ public class PlayerPhysicsController : MonoBehaviour
     #region Serialized Variables
 
     [SerializeField] private PlayerManager manager;
-    [SerializeField] private Rigidbody Rigidbody;
-    [SerializeField] private Collider Collider;
+    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Collider collider;
 
     #endregion
 
